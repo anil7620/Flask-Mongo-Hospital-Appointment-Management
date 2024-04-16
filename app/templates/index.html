@@ -138,10 +138,10 @@
     <h1>Available Doctors</h1>
 
     <div class="link-container">
-        <a href="#" class="button-link">Login</a>
-        <a href="#" class="button-link">Register as Doctor</a>
-        <a href="#" class="button-link">Register as Patient</a>
-        <a href="#" class="button-link">Forgot Password?</a>
+        <a href="{{ url_for('login') }}" class="button-link">Login</a>
+        <a href="{{ url_for('register_doctor') }}" class="button-link">Register as Doctor</a>
+        <a href="{{ url_for('register_patient') }}" class="button-link">Register as Patient</a>
+        <a href="{{ url_for('forgot_password') }}" class="button-link">Forgot Password?</a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
