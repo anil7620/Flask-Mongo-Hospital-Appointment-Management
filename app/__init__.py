@@ -6,7 +6,7 @@ import certifi
 
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/appointment_management"
+app.config["MONGO_URI"] = "mongodb+srv://axk68420:JGWE4RdbICzCBjNV@cluster0.x6ffwl7.mongodb.net/appointment_management"
 # app.config['JWT_SECRET_KEY'] = 'anil'  # Change this!
 # jwt = JWTManager(app)
 ca = certifi.where()
