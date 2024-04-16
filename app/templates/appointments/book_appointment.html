@@ -122,7 +122,7 @@
         <label for="doctor_id">Choose a Doctor:</label>
         <select name="doctor_id" id="doctor_id" required>
             {% for doctor in doctors %}
-                <option value="{{ doctor['_id'] }}">{{ doctor['name'] }}</option>
+                <option value="{{ doctor['_id'] }}">{{ doctor['first_name'] }}</option>
             {% endfor %}
         </select>
         <br><br>

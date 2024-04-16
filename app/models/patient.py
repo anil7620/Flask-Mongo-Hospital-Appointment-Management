@@ -26,7 +26,7 @@ class Patient:
         try:
             patient = cls.collection.find_one({"_id": ObjectId(patient_id)}) 
             # print(f"Found patient: {patient}")
-            return patient['name'] if patient else None
+            return patient['first_name'] if patient else None
         except errors.PyMongoError as e:
             print(f"An error occurred while fetching patient name: {e}")
             return None

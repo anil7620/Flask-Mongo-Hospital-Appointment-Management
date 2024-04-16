@@ -94,7 +94,7 @@
         <label for="doctor_id">Choose a Doctor:</label>
         <select name="doctor_id" id="doctor_id" required>
             {% for doctor in doctors %}
-                <option value="{{ doctor['_id'] }}" {% if appointment['doctor_id'] == doctor['_id'] %}selected{% endif %}>{{ doctor['name'] }}</option>
+                <option value="{{ doctor['_id'] }}" {% if appointment['doctor_id'] == doctor['_id'] %}selected{% endif %}>{{ doctor['first_name'] }}</option>
             {% endfor %}
         </select>
         <br><br>

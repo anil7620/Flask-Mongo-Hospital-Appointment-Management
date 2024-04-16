@@ -26,7 +26,7 @@ class Doctor:
         try:
             # print(f"Querying for doctor_id: {doctor_id}")
             doctor = cls.collection.find_one({"_id": ObjectId(doctor_id)}) 
-            return doctor['name'] if doctor else None
+            return doctor['first_name'] if doctor else None
         except errors.PyMongoError as e:
             print(f"An error occurred while fetching the doctor's name: {e}")
             return None
